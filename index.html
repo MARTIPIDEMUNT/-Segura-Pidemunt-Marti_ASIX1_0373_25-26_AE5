@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo en Roma</title>
+  <!-- Enlace a CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap SOLO para el bloque extra -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Enlace flotante -->
+  <a class="enlace-flotante" href="https://www.turismoroma.it" target="_blank">Turismo Roma</a>
+
+  <header>
+    <h1>Descubre Roma</h1>
+    <p>Historia, cultura y pasión eterna</p>
+  </header>
+
+  <!-- Contenedor principal en GRID -->
+  <div class="layout">
+
+    <!-- COLUMNA 1: MENÚ -->
+    <nav>
+      <ul>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#lugares">Lugares de interés</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        <li><a href="#extra">Experiencia</a></li>
+      </ul>
+    </nav>
+
+    <!-- COLUMNA 2: CONTENIDO PRINCIPAL -->
+    <main>
+
+      <!-- GALERÍA -->
+      <section id="galeria">
+        <h2>Galería de Roma</h2>
+        <!-- Galería formada por 6 imágenes características de la ciudad -->
+        <div class="galeria-grid">
+          <img src="img/galeria/coliseo.jpg" alt="Coliseo Romano">
+          <img src="img/galeria/vaticano.jpg" alt="Ciudad del Vaticano">
+          <img src="img/galeria/fontana.jpg" alt="Fontana di Trevi">
+          <img src="img/galeria/panteon.jpg" alt="Panteón de Agripa">
+          <img src="img/galeria/plaza.jpg" alt="Plaza de España en Roma">
+          <img src="img/galeria/trastevere.jpg" alt="Barrio del Trastevere">
+        </div>
+      </section>
+
+      <!-- LUGARES DE INTERÉS -->
+      <section id="lugares">
+        <h2>Lugares imprescindibles</h2>
+        <div class="lugares-grid">
+
+          <article class="lugar">
+            <h3>Coliseo</h3>
+            <img src="img/lugares/coliseo.jpg" alt="Coliseo">
+            <p>El mayor anfiteatro del Imperio Romano, símbolo de la ciudad.</p>
+            <p><strong>Ubicación:</strong> Piazza del Colosseo</p>
+          </article>
+
+          <article class="lugar">
+            <h3>Vaticano</h3>
+            <img src="img/lugares/vaticano.jpg" alt="Vaticano">
+            <p>Centro espiritual del catolicismo y hogar de la Capilla Sixtina.</p>
+            <p><strong>Ubicación:</strong> Ciudad del Vaticano</p>
+          </article>
+
+          <article class="lugar">
+            <h3>Fontana di Trevi</h3>
+            <img src="img/lugares/trevi.jpg" alt="Fontana di Trevi">
+            <p>La fuente más famosa de Roma, tradición de lanzar una moneda.</p>
+            <p><strong>Ubicación:</strong> Rione Trevi</p>
+          </article>
+
+          <article class="lugar">
+            <h3>Panteón</h3>
+            <img src="img/lugares/panteon.jpg" alt="Panteón">
+            <p>Templo romano con una cúpula impresionante y milenaria.</p>
+            <p><strong>Ubicación:</strong> Piazza della Rotonda</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- MAPA -->
+      <section id="mapa">
+        <h2>Mapa de la ciudad</h2>
+        <img class="mapa" src="img/mapa/roma-mapa.jpg" alt="Mapa de Roma">
+      </section>
+
+      <!-- BLOQUE EXTRA CON BOOTSTRAP -->
+      <section id="extra">
+        <h2>Vive Roma</h2>
+        <div class="accordion" id="accordionRoma">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Gastronomía romana
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Disfruta de la auténtica pasta carbonara, amatriciana y pizza al taglio.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- COLUMNA 3: NOTICIAS -->
+    <aside>
+      <h2>Últimas noticias</h2>
+
+      <article class="noticia">
+        <img src="img/noticias/evento1.jpg" alt="Evento cultural">
+        <h3>Festival cultural</h3>
+        <p>Roma celebra su festival anual de arte y música...</p>
+        <a href="https://www.rome.net" target="_blank">Leer más</a>
+      </article>
+
+      <article class="noticia">
+        <img src="img/noticias/evento2.jpg" alt="Exposición">
+        <h3>Nueva exposición</h3>
+        <p>El Vaticano inaugura una exposición histórica...</p>
+        <a href="https://www.turismoroma.it" target="_blank">Leer más</a>
+      </article>
+
+      <article class="noticia">
+        <img src="img/noticias/evento3.jpg" alt="Concierto">
+        <h3>Concierto al aire libre</h3>
+        <p>Conciertos gratuitos en plazas emblemáticas...</p>
+        <a href="https://www.rome.net" target="_blank">Leer más</a>
+      </article>
+
+      <article class="noticia">
+        <img src="img/noticias/evento4.jpg" alt="Restauración">
+        <h3>Restauración histórica</h3>
+        <p>Finalizan las obras de restauración del Panteón...</p>
+        <a href="https://www.turismoroma.it" target="_blank">Leer más</a>
+      </article>
+
+      <article class="noticia">
+        <img src="img/noticias/evento5.jpg" alt="Deporte">
+        <h3>Maratón de Roma</h3>
+        <p>La ciudad acoge su famosa maratón anual...</p>
+        <a href="https://www.rome.net" target="_blank">Leer más</a>
+      </article>
+
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Turismo Roma</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
