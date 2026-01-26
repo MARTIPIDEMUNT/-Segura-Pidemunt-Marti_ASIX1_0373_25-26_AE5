@@ -92,25 +92,60 @@
       </section>
 
       <!-- BLOQUE EXTRA CON BOOTSTRAP -->
-      <section id="extra">
-        <h2>Vive Roma</h2>
-        <div class="accordion" id="accordionRoma">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                Gastronomía romana
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                Disfruta de la auténtica pasta carbonara, amatriciana y pizza al taglio.
-              </div>
+    <section id="extra">
+      <h2>Vive Roma</h2>
+    
+      <div class="accordion" id="accordionRoma">
+
+        <!-- Gastronomía -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGastronomia">
+              Gastronomía romana
+            </button>
+          </h2>
+          <div id="collapseGastronomia" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Disfruta de la auténtica pasta carbonara, amatriciana, pizza al taglio y gelato italiano.
+              <img src="./img/extra_imagenes/pizza_gastrronomia.jpg" alt="Pizza romana" class="img-fluid mt-3 mb-3">
             </div>
           </div>
         </div>
-      </section>
 
-    </main>
+        <!-- Rutas turísticas -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRutas">
+              Rutas turísticas
+            </button>
+          </h2>
+          <div id="collapseRutas" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Ruta clásica:</strong> Coliseo, Foro Romano y Panteón.<br>
+              <img src="./img/extra_imagenes/ruta_clasica.jpg" alt=" Ruta turística" class="img-fluid mt-3 mb-3">
+              <strong>Ruta nocturna:</strong> Trastevere, plazas iluminadas y fuentes.
+              <img src="./img/extra_imagenes/ruta_nocturna.jpg" alt=" Ruta nocturna" class="img-fluid mt-3">
+            </div>
+          </div>
+        </div>
+
+        <!-- Curiosidades -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCuriosidades">
+              Curiosidades de Roma
+            </button>
+          </h2>
+          <div id="collapseCuriosidades" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Roma tiene más de 900 iglesias, más de 300 fuentes públicas y miles de callejuelas con historia.
+              <img src="./img/extra_imagenes/roma-iglesias-mapa.jpg" alt="Curiosidades de Roma" class="img-fluid mt-3">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- COLUMNA 3: NOTICIAS -->
     <aside>
