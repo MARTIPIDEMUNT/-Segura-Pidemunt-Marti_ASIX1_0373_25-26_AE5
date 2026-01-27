@@ -1,18 +1,18 @@
-/* Reset básico para evitar márgenes y paddings por defecto */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos generales del cuerpo del documento */
+/* Estilos generales */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   background-color: #f2f2f2;
   color: #333;
 }
 
-/* Cabecera principal de la página */
+/* Cabecera */
 header {
   text-align: center;
   background-color: #8b0000;
@@ -24,7 +24,7 @@ header h1 {
   margin-bottom: 5px;
 }
 
-/* Enlace fijo que permanece visible en pantalla */
+/* Enlace flotante */
 .enlace-flotante {
   position: fixed;
   top: 20px;
@@ -41,7 +41,7 @@ header h1 {
   background-color: #a40000;
 }
 
-/* Contenedor principal con columnas usando porcentajes */
+/* Layout principal */
 .layout {
   display: grid;
   grid-template-columns: 20% 55% 25%;
@@ -49,7 +49,7 @@ header h1 {
   padding: 20px;
 }
 
-/* Columna del menú de navegación */
+/* Menú */
 nav {
   background-color: white;
   padding: 20px;
@@ -69,7 +69,7 @@ nav a {
   font-weight: bold;
 }
 
-/* Secciones del contenido principal */
+/* Contenido principal */
 main section {
   background-color: white;
   padding: 20px;
@@ -82,10 +82,10 @@ main h2 {
   padding-bottom: 5px;
 }
 
-/* Galería de imágenes con porcentajes */
+/* Galería de imágenes */
 .galeria-grid {
   display: grid;
-  grid-template-columns: repeat(3, 32%);
+  grid-template-columns: 32% 32% 32%;
   gap: 2%;
 }
 
@@ -95,7 +95,7 @@ main h2 {
   object-fit: cover;
 }
 
-/* Fichas de lugares de interés */
+/* Lugares de interés */
 .lugares-grid {
   display: grid;
   grid-template-columns: 48% 48%;
@@ -113,12 +113,19 @@ main h2 {
   margin-bottom: 8px;
 }
 
+/* Mapa */
 .mapa {
   width: 100%;
   height: auto;
 }
 
-/* Columna lateral de noticias */
+#extra img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Noticias / columna lateral */
 aside {
   background-color: white;
   padding: 20px;
@@ -129,16 +136,14 @@ aside h2 {
 }
 
 .noticia {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  gap: 8px;
   margin-bottom: 20px;
 }
 
 .noticia img {
   width: 100%;
-  height: 100%;
+  height: 500px;
   object-fit: cover;
+  margin-bottom: 5px;
 }
 
 .noticia a {
@@ -147,6 +152,7 @@ aside h2 {
   text-decoration: none;
 }
 
+/* Footer */
 footer {
   text-align: center;
   background-color: #8b0000;
@@ -154,7 +160,8 @@ footer {
   padding: 15px;
 }
 
-/* Adaptación del diseño para tablets */
+/* ------------------ MEDIA QUERIES ------------------ */
+/* Tablet */
 @media (max-width: 900px) {
   .layout {
     grid-template-columns: 25% 70%;
@@ -173,7 +180,7 @@ footer {
   }
 }
 
-/* Adaptación del diseño para móviles */
+/* Móvil */
 @media (max-width: 600px) {
   .layout {
     grid-template-columns: 100%;
